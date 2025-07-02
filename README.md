@@ -49,8 +49,8 @@ npx try-prisma@latest \
 npx try-prisma@latest
   --template databases/prisma-postgres
   --connection-string __YOUR_DATABASE_CONNECTION_STRING__
-  --name hello-prisma
-  --install npm
+  --name notes-app-express
+  --install pnpm
 ```
 
 Your connection string that should replace the `__YOUR_DATABASE_CONNECTION_STRING__` placeholder looks similar to this: `prisma+postgres://accelerate.prisma-data.net/?api_key=ey...`

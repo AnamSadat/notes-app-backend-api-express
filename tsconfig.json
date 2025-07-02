@@ -3,12 +3,16 @@
     "sourceMap": true,
     "outDir": "dist",
     "strict": true,
-    "lib": ["esnext", "DOM"],
+    "lib": ["DOM"],
     "esModuleInterop": true,
     "target": "es2020",
     "rootDir": ".",
     "module": "es2022",
     "moduleResolution": "node",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "esm": true
   }
 }

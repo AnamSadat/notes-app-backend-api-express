@@ -14,7 +14,7 @@ export default defineConfig([
     languageOptions: { globals: globals.browser },
   },
   tseslint.configs.recommended,
-  { ignores: ['node_modules', 'dist'] },
+  { ignores: ['node_modules', 'dist', 'prisma'] },
   {
     rules: {
       quotes: ['error', 'single'],
