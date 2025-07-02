@@ -9,8 +9,9 @@
     "node",
     "jsdoc"
   ],
+  "type": "module",
   "scripts": {
-    "queries": "ts-node ./src/queries.ts",
+    "queries": "node --import tsx ./src/queries.ts",
     "caching": "ts-node ./src/caching.ts",
     "build": "tsc",
     "dev": "ts-node-dev src/server.ts",
@@ -18,7 +19,8 @@
     "lint:fix": "npx eslint . --fix",
     "lint": "npx eslint .",
     "doc": "rimraf docs && typedoc",
-    "doc:open": "pnpm doc && start doc/index.html"
+    "doc:open": "pnpm doc && start doc/index.html",
+    "prisma-seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
     "@prisma/client": "6.9.0",
@@ -56,6 +58,7 @@
     "ts-jest": "^29.4.0",
     "ts-node": "10.9.2",
     "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.3",
     "typedoc": "^0.28.7",
     "typescript": "5.8.2",
     "typescript-eslint": "^8.35.1"
