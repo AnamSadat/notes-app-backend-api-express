@@ -12,7 +12,7 @@ async function main() {
   // https://www.prisma.io/docs/accelerate/caching
   const cachedUsersWithPosts = await prisma.user.findMany({
     where: {
-      email: { contains: "alice" }
+      email: { contains: 'alice' }
     },
     include: { posts: true },
     cacheStrategy: {
@@ -27,7 +27,7 @@ async function main() {
   const elapsedTime = endTime - startTime;
 
   console.log(`The query took ${elapsedTime}ms.`);
-  console.log(`It returned the following data: \n`, cachedUsersWithPosts);
+  console.log('It returned the following data: \n', cachedUsersWithPosts);
 
 }
 
