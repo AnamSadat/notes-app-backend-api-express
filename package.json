@@ -20,7 +20,7 @@
     "lint": "npx eslint .",
     "doc": "rimraf docs && typedoc",
     "doc:open": "pnpm doc && start doc/index.html",
-    "prisma-seed": "ts-node prisma/seed.ts"
+    "prisma-seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@prisma/client": "6.9.0",
