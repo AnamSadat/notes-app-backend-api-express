@@ -39,8 +39,8 @@ Copy the `try-prisma` command that', paste it into your terminal, and execute it
 ```terminal
 npx try-prisma@latest \
   --template databases/prisma-postgres \
-  --name hello-prisma \
-  --install npm
+  --name notes-app-express \
+  --install pnpm
 ```
 
 <!-- For reference, this is what the command looks like (note that the `__YOUR_DATABASE_CONNECTION_STRING__` placeholder must be replaced with _your_ actual database connection string):
