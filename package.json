@@ -11,7 +11,7 @@
   ],
   "type": "module",
   "scripts": {
-    "queries": "node --import tsx ./src/queries.ts",
+    "queries": "tsx ./src/queries.ts",
     "caching": "ts-node ./src/caching.ts",
     "build": "tsc",
     "dev": "ts-node-dev src/server.ts",
@@ -20,11 +20,12 @@
     "lint": "npx eslint .",
     "doc": "rimraf docs && typedoc",
     "doc:open": "pnpm doc && start doc/index.html",
-    "prisma-seed": "tsx prisma/seed.ts"
+    "prisma-seed": "tsx prisma/seed.ts",
+    "test:db": "tsx ./src/db/test-db.ts",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@prisma/client": "6.9.0",
-    "@prisma/extension-accelerate": "2.0.1",
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "16.6.1",
